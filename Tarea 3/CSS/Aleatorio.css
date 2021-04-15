@@ -1,0 +1,64 @@
+:root {
+    --Background: rgb(68, 68, 68);
+    --Background-Keys: rgb(32, 37, 51);
+    --Keys: rgb(172, 172, 172);
+    --Celeste: rgb(97, 221, 230);
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: var(--Background);
+    display: grid;
+    height: 500px;
+    width: 720px;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuerpo {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3,150px);
+    margin: 20px;
+    gap: 5px;
+}
+
+.item {
+    display: grid;
+    background-color: rgb(168, 167, 167);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.titulo {
+    grid-column: span 4;
+}
+
+.intro_minimo, .intro_maximo{
+    grid-column: span 2;
+}
+
+.boton {
+    background-color: rgb(32, 35, 219);
+}
+.botonn {
+    border-radius: 1rem;
+    background-color: rgb(32, 35, 219);
+    width: 150px;
+    height: 150px;
+}
+
+
+.resultado {
+    grid-column: span 3;
+}
